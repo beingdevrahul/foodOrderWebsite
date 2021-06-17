@@ -1,0 +1,16 @@
+extends base.pug
+
+block style 
+  style 
+    include ../static/contact.css 
+
+block content 
+  div#contact 
+    h1 Contact Us
+      form(action="/post", method="post",id="form") 
+        input(type="text", name ="name" placeholder="enter you name")
+        input(type="text", name="fName" placeholder="enter your father's name")
+        input(type="text", name="eMail" placeholder="enter your email id")
+        input(type="number", name="mobileNno" placeholder="enter your mobile number" )
+        <textarea (name="details" id="details" cols="30" rows="10" placeholder="type your message ") ></textarea>
+        button#submit(type="submit", onClick="sub()") Submit

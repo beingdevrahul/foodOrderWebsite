@@ -1,0 +1,25 @@
+extends base.pug 
+
+block style 
+  style 
+    include ../static/services.css 
+    
+
+block content 
+  h1 Our Services..
+  section#services
+    div.cards 
+      h2 Online Order.
+      div.cards-img
+        img(src="../static/images/3.png", alt="onlineOrder", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et.
+    div.cards 
+      h2 Free Home delivery.
+      div.cards-img
+        img(src="../static/images/1.png", alt="onlineOrder", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et.
+    div.cards 
+      h2 Instant Delivery.
+      div.cards-img
+        img(src="../static/images/2.png", alt="onlineOrder", srcset="")
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Et.

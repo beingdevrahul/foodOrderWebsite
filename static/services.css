@@ -1,0 +1,39 @@
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+#services{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.cards{
+    border: 2px solid grey;
+    display: inline-block;
+    width: 350px;
+    height: 300px;
+    background-color: ivory;
+    margin:10px;
+    border-radius: 5px;
+
+}
+.cards h2{
+    font-size: 25px;
+    text-align: center;
+}
+.cards p{
+    text-align: center;
+    font-size: 17px;
+}
+
+.cards-img{
+    height: 100px;
+    padding: 0px 14px;
+    margin: 23px;
+}
+.cards-img img{
+    height: inherit;
+    margin:0px auto;
+    width: inherit;
+}

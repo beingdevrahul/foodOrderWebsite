@@ -1,0 +1,44 @@
+#form{
+    display: flex;
+    flex-direction: column;
+}
+#contact input ,textarea{
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 7px;
+    outline: none;
+    width: 70%;
+    border: 3px solid black;
+    background: transparent;
+}
+
+h1{
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 10px;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 585px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../static/images/con1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#submit{
+    width: 15%;
+    margin: 2px auto;
+    padding: 12px;
+    border-radius: 4px;
+}
+#submit:hover{
+    width: 15%;
+    margin: 2px auto;
+    padding: 12px;
+    cursor: pointer;
+    background: aquamarine;
+    border-radius: 4px;
+}

@@ -1,0 +1,30 @@
+doctype html 
+html 
+  head 
+    title myOnlineFood.com 
+    block scripts 
+    block style 
+    style 
+      include ../static/base.css
+    script 
+      include ../static/home.js
+
+
+  body 
+
+    header 
+      div#upperNav
+        img#logo(src="../static/images/logo.jpg", alt="logo", srcset="" )
+        h1 Hey!! Here You can tast delicious food of Delhi Ncr...
+        p myOnlineFood.com 
+      div.mainNav  
+        div#nav 
+          ul#navbar
+            li #[a(href="/home") Home]
+            li #[a(href="/services") Services]
+            li #[a(href="/AboutUs") About Us]
+            li #[a(href="/ContactUs") Contact Us]
+          input#search(type="text", name="search",placeholder="search for website")
+    block content
+    footer#footer 
+     |  @myOnlineFood.com | All Right Reserved.

@@ -1,0 +1,150 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#upperNav{
+    
+    width: 100vw;
+    color: black;
+    background-color: maroon;
+    left: 0px;
+    height: 100px;
+    display: flex;
+}
+#upperNav p{
+    
+    display: none;
+}
+
+
+#upperNav h1{
+    margin: auto;
+    /* font-size: larger; */
+    font-weight: bolder;
+}
+#nav{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    /* background-color: brown; */
+    position: sticky;
+    top: 0px;
+    width: 100vw;
+    left: 0px;
+
+}
+
+.mainNav{
+    position: sticky;
+}
+#nav::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    height: 70.4615px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background-color: black;
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font: bolder;
+    height: 10vh;
+    width: 100vw;
+}
+#logo{
+    width: 80px;
+    height: 80px;
+    /* margin-left: 20px; */
+    margin: 10px 20px;
+}
+#search{
+    width: 150px;
+    height: 2rem;
+    border-radius: 5px;
+    margin: auto;
+    
+}
+#search:hover{
+    width: 150px;
+    height: 2rem;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: auto;
+    
+}
+#navbar{
+    display: flex;
+    }
+#navbar li{ 
+    list-style: none;
+    margin: 10px;
+    }
+#navbar a{ 
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    }
+#navbar a:hover{ 
+    text-decoration: none;
+    color: rgb(54, 251, 19);
+    font-weight: bolder;
+    }
+
+@media  screen and (max-width:840px){
+   #upperNav{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       height: 150px;
+   }
+    
+}
+@media screen and (max-width:730px){
+    #upperNav h1{
+        display: none;
+    }
+    #upperNav p{
+        display: inline-block;
+        font-weight: bolder;
+        font-size: 30px;
+        font-family: cursive;
+        /* border: 2px solid yellow; */
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width:580px) and (min-width:335px){
+    #search{
+        display: none;
+    }
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #navbar{
+    padding-left: inherit;
+    }
+    
+}
+@media screen and (max-width:335px){
+#search{
+    display: none;
+}
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav::before{
+        height: 186.4615px;
+    }
+}
